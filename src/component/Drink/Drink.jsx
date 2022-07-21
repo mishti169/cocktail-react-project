@@ -2,17 +2,14 @@ import React, { Component } from "react";
 import "./Drink.css";
 class Drink extends Component {
   render() {
+    const { img, name, info, glass } = this.props;
     return (
       <div className="drink">
-        <img
-          src="https://www.thecocktaildb.com/images/media/drink/1mvjxg1504348579.jpg"
-          alt="drink"
-          width={260}
-        />
+        <img src={img} alt="drink" width={260} />
         <div className="drink-details">
-          <span>Casino</span>
-          <span>Cocktail glass</span>
-          <span>Alcoholic</span>
+          <span>{name}</span>
+          <span>{glass}</span>
+          <span>{info}</span>
           <span>DETAILS</span>
         </div>
       </div>
