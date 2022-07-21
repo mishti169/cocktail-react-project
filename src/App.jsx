@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Header from './component/Header/Header';
+
  const drinks = [
     {
         "idDrink": "17222",
@@ -1336,6 +1338,7 @@ class App extends Component {
   render(){
     return(
       <>
+        <Header/>
         <h4>hii i am app</h4>
       </>
     )
