@@ -4,6 +4,13 @@
   max-width: fit-content;
 }
 
+img {
+  width: 100%;
+}
+.drink-img {
+  height: 20rem;
+  object-fit: contain;
+}
 .drink-details {
   border: 1px solid red;
   display: flex;

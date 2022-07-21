@@ -5,7 +5,7 @@ class Drink extends Component {
     const { img, name, info, glass } = this.props;
     return (
       <div className="drink">
-        <img src={img} alt="drink" width={260} />
+        <img src={img} alt="drink" width={260} className="drink-img" />
         <div className="drink-details">
           <span>{name}</span>
           <span>{glass}</span>
