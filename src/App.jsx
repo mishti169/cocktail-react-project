@@ -1,15 +1,18 @@
-import React, { Component } from "react";
+import React, { Component, createContext } from "react";
+import DrinkList from "./component/DrinkList/DrinkList";
 import Header from "./component/Header/Header";
 import Search from "./component/Search/Search";
 import { drinks } from "./utils/utils.js";
+
+export const DrinkContext = createContext([]);
 class App extends Component {
   render() {
     return (
-      <>
+      <DrinkContext.Provider value={drinks}>
         <Header />
         <Search />
-        <h4>hii i am app</h4>
-      </>
+        <DrinkList />
+      </DrinkContext.Provider>
     );
   }
 }
