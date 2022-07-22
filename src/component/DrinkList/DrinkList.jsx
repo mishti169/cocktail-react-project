@@ -22,7 +22,7 @@ class DrinkList extends Component {
         {(arr) => {
           return (
             <div className="drink-list-container">
-              <div className="drink-list">{this.getDrinks(arr)}</div>;
+              <div className="drink-list">{this.getDrinks(arr)}</div>
             </div>
           );
         }}
